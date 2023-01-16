@@ -26,8 +26,18 @@
   padding-top: 3%;
 }
 
-.head3{
+.head1{
   font-weight: bold;
   line-height: 40px;
   margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.p1{
+  font-size: 16px;
+  font-family: "思源黑体 CN Medium";
+  line-height: 28px;
+}
+li{
+  margin-bottom: 5px;
 }
