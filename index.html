@@ -417,13 +417,392 @@
             setSPWithSeen();
         </script>
 
+        <div style="height: 80px"></div>
         <h1 class="head1"><a id="exp3">3: Speech Editing with unseen speaker</a></h1>
         <hr class="hr-div">
         <p><kbd class="kbd-div">3.1: Insertion</kbd></p>
+        <div>
+            <p><strong>Sample 1</strong></p>
+            <div class="audio-tb">
+                <table class="table table-bordered table-light" name="unseen-insertion">
+                    <thead></thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row" style="text-align: center">original text</th>
+                        <td colspan="5">for once , you should believe the <mark>hype</mark> .</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="text-align: center;">edited text</th>
+                        <td colspan="5">for once , you should believe the <mark>media hype</mark> .</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="text-align: center">speaker id</th>
+                        <td colspan="5">p227</td>
+                    </tr>
+                    <tr class="table-dark" style="line-height: 40px">
+                        <td style="text-align: center">GT</td>
+                        <td style="text-align: center">A<sup>3</sup>T</td>
+                        <td style="text-align: center">CampNet</td>
+                        <td style="text-align: center">EditSpeech</td>
+                        <td style="text-align: center">FluentSpeech</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><strong>Sample 2</strong></p>
+            <div class="audio-tb">
+                <table class="table table-bordered table-light" name="unseen-insertion">
+                    <thead></thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row" style="text-align: center">original text</th>
+                        <td colspan="5">we are talking about a case of champagne and <mark>a vacuum cleaner</mark> .</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="text-align: center;">edited text</th>
+                        <td colspan="5">we are talking about a case of champagne and <mark>a smart home vacuum cleaner</mark> .</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="text-align: center">speaker id</th>
+                        <td colspan="5">p237</td>
+                    </tr>
+                    <tr class="table-dark" style="line-height: 40px">
+                        <td style="text-align: center">GT</td>
+                        <td style="text-align: center">A<sup>3</sup>T</td>
+                        <td style="text-align: center">CampNet</td>
+                        <td style="text-align: center">EditSpeech</td>
+                        <td style="text-align: center">FluentSpeech</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><strong>Sample 3</strong></p>
+            <div class="audio-tb">
+                <table class="table table-bordered table-light" name="unseen-insertion">
+                    <thead></thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row" style="text-align: center">original text</th>
+                        <td colspan="5">immediate action must <mark>be taken</mark> .</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="text-align: center;">edited text</th>
+                        <td colspan="5">immediate action must <mark>be strictly taken to stop this movement</mark> .</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="text-align: center">speaker id</th>
+                        <td colspan="5">p237</td>
+                    </tr>
+                    <tr class="table-dark" style="line-height: 40px">
+                        <td style="text-align: center">GT</td>
+                        <td style="text-align: center">A<sup>3</sup>T</td>
+                        <td style="text-align: center">CampNet</td>
+                        <td style="text-align: center">EditSpeech</td>
+                        <td style="text-align: center">FluentSpeech</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><strong>Sample 4</strong></p>
+            <div class="audio-tb">
+                <table class="table table-bordered table-light" name="unseen-insertion">
+                    <thead></thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row" style="text-align: center">original text</th>
+                        <td colspan="5"><mark>this idea</mark> has been around for four years .</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="text-align: center;">edited text</th>
+                        <td colspan="5"><mark>this unrealistic idea proposed by him</mark> has been around for four years .</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="text-align: center">speaker id</th>
+                        <td colspan="5">p261</td>
+                    </tr>
+                    <tr class="table-dark" style="line-height: 40px">
+                        <td style="text-align: center">GT</td>
+                        <td style="text-align: center">A<sup>3</sup>T</td>
+                        <td style="text-align: center">CampNet</td>
+                        <td style="text-align: center">EditSpeech</td>
+                        <td style="text-align: center">FluentSpeech</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><strong>Sample 5</strong></p>
+            <div class="audio-tb">
+                <table class="table table-bordered table-light" name="unseen-insertion">
+                    <thead></thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row" style="text-align: center">original text</th>
+                        <td colspan="5">the company hopes to <mark>top seven million passengers</mark> in its current financial year .</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="text-align: center;">edited text</th>
+                        <td colspan="5">the company hopes to <mark>double its profits with rapid growth across all businesses</mark> in its current financial year .</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="text-align: center">speaker id</th>
+                        <td colspan="5">p280</td>
+                    </tr>
+                    <tr class="table-dark" style="line-height: 40px">
+                        <td style="text-align: center">GT</td>
+                        <td style="text-align: center">A<sup>3</sup>T</td>
+                        <td style="text-align: center">CampNet</td>
+                        <td style="text-align: center">EditSpeech</td>
+                        <td style="text-align: center">FluentSpeech</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
         <p><kbd class="kbd-div">3.2: Replacement</kbd></p>
+        <div>
+            <p><strong>Sample 1</strong></p>
+            <div class="audio-tb">
+                <table class="table table-bordered table-light" name="unseen-replacement">
+                    <thead></thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row" style="text-align: center">original text</th>
+                        <td colspan="5">however , there is <u>an issue</u> , isnt there ?</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="text-align: center;">edited text</th>
+                        <td colspan="5">however , there is <u>a last opportunity</u> , isnt there ?</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="text-align: center">speaker id</th>
+                        <td colspan="5">p227</td>
+                    </tr>
+                    <tr class="table-dark" style="line-height: 40px">
+                        <td style="text-align: center">GT</td>
+                        <td style="text-align: center">A<sup>3</sup>T</td>
+                        <td style="text-align: center">CampNet</td>
+                        <td style="text-align: center">EditSpeech</td>
+                        <td style="text-align: center">FluentSpeech</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><strong>Sample 2</strong></p>
+            <div class="audio-tb">
+                <table class="table table-bordered table-light" name="unseen-replacement">
+                    <thead></thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row" style="text-align: center">original text</th>
+                        <td colspan="5">this is a scheme that <u>has a lot of potential</u> .</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="text-align: center;">edited text</th>
+                        <td colspan="5">this is a scheme that <u>will be reasonable and effective .</u></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="text-align: center">speaker id</th>
+                        <td colspan="5">p237</td>
+                    </tr>
+                    <tr class="table-dark" style="line-height: 40px">
+                        <td style="text-align: center">GT</td>
+                        <td style="text-align: center">A<sup>3</sup>T</td>
+                        <td style="text-align: center">CampNet</td>
+                        <td style="text-align: center">EditSpeech</td>
+                        <td style="text-align: center">FluentSpeech</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><strong>Sample 3</strong></p>
+            <div class="audio-tb">
+                <table class="table table-bordered table-light" name="unseen-replacement">
+                    <thead></thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row" style="text-align: center">original text</th>
+                        <td colspan="5"><u>in essence</u> , the teaching profession has a choice .</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="text-align: center;">edited text</th>
+                        <td colspan="5"><u>to some extent</u> , the teaching profession has a choice .</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="text-align: center">speaker id</th>
+                        <td colspan="5">p261</td>
+                    </tr>
+                    <tr class="table-dark" style="line-height: 40px">
+                        <td style="text-align: center">GT</td>
+                        <td style="text-align: center">A<sup>3</sup>T</td>
+                        <td style="text-align: center">CampNet</td>
+                        <td style="text-align: center">EditSpeech</td>
+                        <td style="text-align: center">FluentSpeech</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><strong>Sample 4</strong></p>
+            <div class="audio-tb">
+                <table class="table table-bordered table-light" name="unseen-replacement">
+                    <thead></thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row" style="text-align: center">original text</th>
+                        <td colspan="5">and now <u>the pressure</u> is off .</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="text-align: center;">edited text</th>
+                        <td colspan="5">and now <u>the light in the living room</u> is off .</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="text-align: center">speaker id</th>
+                        <td colspan="5">p316</td>
+                    </tr>
+                    <tr class="table-dark" style="line-height: 40px">
+                        <td style="text-align: center">GT</td>
+                        <td style="text-align: center">A<sup>3</sup>T</td>
+                        <td style="text-align: center">CampNet</td>
+                        <td style="text-align: center">EditSpeech</td>
+                        <td style="text-align: center">FluentSpeech</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><strong>Sample 5</strong></p>
+            <div class="audio-tb">
+                <table class="table table-bordered table-light" name="unseen-replacement">
+                    <thead></thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row" style="text-align: center">original text</th>
+                        <td colspan="5"><u>these take the shape of a long round arch</u> , with its path high above , and its two ends apparently beyond the horizon .</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="text-align: center;">edited text</th>
+                        <td colspan="5"><u>the bridge resembles a rainbow across the sky</u> , with its path high above , and its two ends apparently beyond the horizon .</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="text-align: center">speaker id</th>
+                        <td colspan="5">p336</td>
+                    </tr>
+                    <tr class="table-dark" style="line-height: 40px">
+                        <td style="text-align: center">GT</td>
+                        <td style="text-align: center">A<sup>3</sup>T</td>
+                        <td style="text-align: center">CampNet</td>
+                        <td style="text-align: center">EditSpeech</td>
+                        <td style="text-align: center">FluentSpeech</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                        <td style="width: 20%"><audio class="audio-div" controls=""><source src="" type="audio/wav" /></audio></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
         <p><kbd class="kbd-div">3.3: Deletion</kbd></p>
 
+        <script>
+            function setSPWithSeen() {
+                let cols = ["gt", "a3t", "campnet", "editspeech", "fluentspeech"]
+                let insertion_audios = ['p227_092.wav', 'p237_196.wav', 'p237_285.wav', 'p261_265.wav','p280_174.wav']
+                let replacement_audios = ['p227_400.wav', 'p237_117.wav', 'p261_304.wav', 'p316_125.wav', 'p336_008.wav']
 
+
+                var x = document.getElementsByName("unseen-insertion");
+                let num = x.length;
+                for(let i=0;i<num;i+=1) {
+                    var audios = x[i].getElementsByTagName("audio")
+                    for (let j=0;j<cols.length;j+=1) {
+                        fileName = insertion_audios[i]
+                        path = "audio_samples/SpeechEditing/unseen/" + cols[j] + "/insertion/" + fileName
+                        audios[j].src = path
+                        console.log(path)
+                    }
+                }
+
+                var y = document.getElementsByName("unseen-replacement");
+                let len = x.length;
+                for(let i=0;i<len;i+=1) {
+                    var audios = y[i].getElementsByTagName("audio")
+                    for (let j=0;j<cols.length;j+=1) {
+                        fileName = replacement_audios[i]
+                        path = "audio_samples/SpeechEditing/unseen/" + cols[j] + "/replacement/" + fileName
+                        audios[j].src = path
+                        console.log(path)
+                    }
+                }
+            }
+            setSPWithSeen();
+        </script>
+
+        <div style="height: 80px"></div>
         <h1 class="head1"><a id="exp4">4: SASE task (automatically remove stutter)</a></h1>
         <hr class="hr-div">
         <p class="font-family-div">We provide the original audios, edited audios from our proposed system in the experiments based on our newly collected <strong>SASE</strong> dataset.</p>
@@ -529,7 +908,7 @@
             setSASE();
         </script>
 
-        <div style="min-height: 300px"></div>
+        <div style="min-height: 150px"></div>
     </div>
     <div class="p-3 bg-dark bg-gradient text-white" style="min-height:120px"></div>
 
