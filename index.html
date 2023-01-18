@@ -15,7 +15,7 @@
     <div class="bg-success text-dark bg-opacity-10 body-div">
         <h1 class="head1">FluentSpeech: Stutter-Oriented Automatic Speech Editing
             with Context-Aware Diffusion Models</h1>
-        <p class="p1-div">We demonstrate experimental results on two tasks (speech editing and <strong>stutter-oriented automatic speech editing</strong> also abbreviated as <strong>SASE</strong>) for demo respectively. For speech editing task, we provide 5 samples for each edit option, including insertion, replacement and deletion. For the insertion and replacement , we provide the original audio, the edited audio from baseline systems and our proposed system to compare the edit performance of different systems. In particular, we do not show the effect of delete operation, as difference between different system is not noticeable. For SASE task, we provide 5 samples including the original audio, the edited audio from the proposed system to show the high efficiency of our model in improving the fluency of stuttering speech.</p>
+        <p class="p1-div">We demonstrate experimental results on two tasks (speech editing and <strong>stutter-oriented automatic speech editing</strong> also abbreviated as <strong>SASE</strong>) for demo respectively. For speech editing task, we provide 5 samples for each edit option, including insertion, replacement and deletion. For the insertion and replacement , we provide the original audio, the edited audio from baseline systems and our proposed system to compare the edit performance of different systems. In particular, we do not show the effect of delete operation, as difference between different system is not noticeable. For SASE task, we provide 10 samples including the original audio, the edited audio from the proposed system to show the high efficiency of our model in improving the fluency of stuttering speech.</p>
         <p><mark style="color: red">Note: Audio samples include both seen and unseen speakers.</mark></p>
         <h1 class="head1">Content</h1>
         <div style="margin-left: 15px;margin-top: -10px;margin-bottom: 25px">
@@ -420,16 +420,114 @@
         <h1 class="head1"><a id="exp3">3: Speech Editing with unseen speaker</a></h1>
         <hr class="hr-div">
         <p><kbd class="kbd-div">3.1: Insertion</kbd></p>
-        <div>
-
-        </div>
         <p><kbd class="kbd-div">3.2: Replacement</kbd></p>
         <p><kbd class="kbd-div">3.3: Deletion</kbd></p>
+
 
         <h1 class="head1"><a id="exp4">4: SASE task (automatically remove stutter)</a></h1>
         <hr class="hr-div">
         <p class="font-family-div">We provide the original audios, edited audios from our proposed system in the experiments based on our newly collected <strong>SASE</strong> dataset.</p>
+        <div class="sase-audio">
+            <table class="table table-striped table-bordered table-light align-middle" name="sase" style="text-align: center;font-family: '微软雅黑 Light';font-weight: bold">
+                <thead>
+                <tr class="table-dark" style="line-height: 50px;font-size: 20px">
+                    <th scope="col" style="width: 5%">#</th>
+                    <th scope="col" style="width: 35%">Text</th>
+                    <th scope="col" style="width: 30%">GT</th>
+                    <th scope="col" style="width: 30%">FluentSpeech</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>because theres lots of important choices that you might make that depend on that information .</td>
+                    <td><audio style="width: 75%" controls=""><source src="" type="audio/wav" /></audio></td>
+                    <td><audio style="width: 75%" controls=""><source src="" type="audio/wav" /></audio></td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>no lens is perfect , and youve got different aberrations .</td>
+                    <td><audio style="width: 75%" controls=""><source src="" type="audio/wav" /></audio></td>
+                    <td><audio style="width: 75%" controls=""><source src="" type="audio/wav" /></audio></td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>so in the last two to three years , theres some new detectors that have come online .</td>
+                    <td><audio style="width: 75%" controls=""><source src="" type="audio/wav" /></audio></td>
+                    <td><audio style="width: 75%" controls=""><source src="" type="audio/wav" /></audio></td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>so we can see here that this ray a coming from the left is being deflected up and to the right .</td>
+                    <td><audio style="width: 75%" controls=""><source src="" type="audio/wav" /></audio></td>
+                    <td><audio style="width: 75%" controls=""><source src="" type="audio/wav" /></audio></td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>they actually were able to measure single base pair incorporation into a growing mrna chain as rna polymerase walked along a template .</td>
+                    <td><audio style="width: 75%" controls=""><source src="" type="audio/wav" /></audio></td>
+                    <td><audio style="width: 75%" controls=""><source src="" type="audio/wav" /></audio></td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>but send me an email , and ill look it up .</td>
+                    <td><audio style="width: 75%" controls=""><source src="" type="audio/wav" /></audio></td>
+                    <td><audio style="width: 75%" controls=""><source src="" type="audio/wav" /></audio></td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td>but what are some other reasons why people might not want to engage in risk ?</td>
+                    <td><audio style="width: 75%" controls=""><source src="" type="audio/wav" /></audio></td>
+                    <td><audio style="width: 75%" controls=""><source src="" type="audio/wav" /></audio></td>
+                </tr>
+                <tr>
+                    <th scope="row">8</th>
+                    <td>we want to solve some np hard problem on a graph .</td>
+                    <td><audio style="width: 75%" controls=""><source src="" type="audio/wav" /></audio></td>
+                    <td><audio style="width: 75%" controls=""><source src="" type="audio/wav" /></audio></td>
+                </tr>
+                <tr>
+                    <th scope="row">9</th>
+                    <td>so in the x and y columns , ive shown all the possibilities .</td>
+                    <td><audio style="width: 75%" controls=""><source src="" type="audio/wav" /></audio></td>
+                    <td><audio style="width: 75%" controls=""><source src="" type="audio/wav" /></audio></td>
+                </tr>
+                <tr>
+                    <th scope="row">10</th>
+                    <td>and its a really bad condition where at age forty , fifty that manifests .</td>
+                    <td><audio style="width: 75%" controls=""><source src="" type="audio/wav" /></audio></td>
+                    <td><audio style="width: 75%" controls=""><source src="" type="audio/wav" /></audio></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
 
+        <script>
+            function setSASE() {
+                let sase_audios = ['Lec_Video_007_001_SEG121', 'Lec_Video_026_000_SEG71', 'Lec_Video_026_000_SEG163',
+                                    'Lec_Video_028_000_SEG117', 'Lec_Video_028_001_SEG57', 'Lec_Video_047_001_SEG72',
+                                    'Lec_Video_050_000_SEG140', 'Lec_Video_053_001_SEG115', 'Lec_Video_069_001_SEG35',
+                                    'Lec_Video_075_001_SEG104']
+
+
+                var x = document.getElementsByName("sase");
+                var audios = x[0].getElementsByTagName("audio")
+                let num = audios.length;
+                var j = 0
+                for(let i=0;i<num;i+=2) {
+                    fileName_ref = sase_audios[j] + '_ref.wav'
+                    fileName_sase = sase_audios[j] + '.wav'
+                    path_ref = "audio_samples/SASE/audios/" + fileName_ref
+                    path_sase = "audio_samples/SASE/audios/" + fileName_sase
+                    audios[i].src = path_ref
+                    audios[i+1].src = path_sase
+                    j+=1
+                    console.log(fileName_ref)
+                    console.log(fileName_sase)
+                }
+            }
+            setSASE();
+        </script>
 
         <div style="min-height: 300px"></div>
     </div>
