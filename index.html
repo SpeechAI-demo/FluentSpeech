@@ -22,8 +22,7 @@
             <li class="li-div"><a href="#exp1"><font size="4">1: Baseline Systems</font></a>
             <li class="li-div"><a href="#exp2"><font size="4">2: Speech Editing with seen speaker (deletion, insertion and replacement)</font></a>
             <li class="li-div"><a href="#exp3"><font size="4">3: Speech Editing with unseen speaker</font></a>
-            <li class="li-div"><a href="#exp4"><font size="4">4: SASE with seen speaker (automatically remove stutter)</font></a>
-            <li class="li-div"><a href="#exp5"><font size="4">5: SASE with unseen speaker</font></a>
+            <li class="li-div"><a href="#exp4"><font size="4">4: SASE task (automatically remove stutter)</font></a>
         </div>
         <h1 class="head1"><a id="exp1">1: Baseline Systems</a></h1>
         <hr class="hr-div">
@@ -34,15 +33,197 @@
         </ol>
         <h1 class="head1"><a id="exp2">2: Speech Editing with seen speaker (deletion, insertion and replacement)</a></h1>
         <hr class="hr-div">
+        <p class="font-family-div">We provide the original audios, edited audios from the speech editing systems in the experiments from two datasets, including <strong>VCTK</strong> and <strong>LibriTTS</strong> both of which are English datasets.</p>
+        <p><kbd class="kbd-div">2.1: Insertion</kbd></p>
+        <div>
+            <p><strong>Sample 1</strong></p>
+            <div class="audio-tb">
+                <table class="table table-bordered table-light">
+                    <thead></thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row" style="text-align: center">original text</th>
+                        <td colspan="5">no , the equipment is extra .</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="text-align: center;">edited text</th>
+                        <td colspan="5">no , the equipment is not enough .</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="text-align: center">speaker id</th>
+                        <td colspan="5">p234</td>
+                    </tr>
+                    <tr class="table-dark" style="line-height: 40px">
+                        <td style="text-align: center">GT</td>
+                        <td style="text-align: center">A<sup>3</sup>T</td>
+                        <td style="text-align: center">CampNet</td>
+                        <td style="text-align: center">EditSpeech</td>
+                        <td style="text-align: center">FluentSpeech</td>
+                    </tr>
+                    <tr>
+                        <td><audio class="audio-div" controls=""><source src="./audio_samples/SpeechEditing/seen/gt/p234_119.wav" type="audio/wav" /></audio></td>
+                        <td><audio class="audio-div" controls=""><source src="./audio_samples/SpeechEditing/seen/gt/p240_134.wav" type="audio/wav" /></audio></td>
+                        <td><audio class="audio-div" controls=""><source src="./audio_samples/SpeechEditing/seen/gt/p260_356.wav" type="audio/wav" /></audio></td>
+                        <td><audio class="audio-div" controls=""><source src="./audio_samples/SpeechEditing/seen/gt/p234_119.wav" type="audio/wav" /></audio></td>
+                        <td><audio class="audio-div" controls=""><source src="./audio_samples/SpeechEditing/seen/gt/p234_119.wav" type="audio/wav" /></audio></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><strong>Sample 2</strong></p>
+            <div class="audio-tb">
+                <table class="table table-bordered table-light">
+                    <thead></thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row" style="text-align: center">original text</th>
+                        <td colspan="5">no , the equipment is extra .</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="text-align: center;">edited text</th>
+                        <td colspan="5">no , the equipment is not enough .</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="text-align: center">speaker id</th>
+                        <td colspan="5">p234</td>
+                    </tr>
+                    <tr class="table-dark" style="line-height: 40px">
+                        <td style="text-align: center">GT</td>
+                        <td style="text-align: center">A<sup>3</sup>T</td>
+                        <td style="text-align: center">CampNet</td>
+                        <td style="text-align: center">EditSpeech</td>
+                        <td style="text-align: center">FluentSpeech</td>
+                    </tr>
+                    <tr>
+                        <td><audio class="audio-div" controls=""><source src="./audio_samples/SpeechEditing/seen/gt/p234_119.wav" type="audio/wav" /></audio></td>
+                        <td><audio class="audio-div" controls=""><source src="./audio_samples/SpeechEditing/seen/gt/p240_134.wav" type="audio/wav" /></audio></td>
+                        <td><audio class="audio-div" controls=""><source src="./audio_samples/SpeechEditing/seen/gt/p260_356.wav" type="audio/wav" /></audio></td>
+                        <td><audio class="audio-div" controls=""><source src="./audio_samples/SpeechEditing/seen/gt/p234_119.wav" type="audio/wav" /></audio></td>
+                        <td><audio class="audio-div" controls=""><source src="./audio_samples/SpeechEditing/seen/gt/p234_119.wav" type="audio/wav" /></audio></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><strong>Sample 3</strong></p>
+            <div class="audio-tb">
+                <table class="table table-bordered table-light">
+                    <thead></thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row" style="text-align: center">original text</th>
+                        <td colspan="5">no , the equipment is extra .</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="text-align: center;">edited text</th>
+                        <td colspan="5">no , the equipment is not enough .</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="text-align: center">speaker id</th>
+                        <td colspan="5">p234</td>
+                    </tr>
+                    <tr class="table-dark" style="line-height: 40px">
+                        <td style="text-align: center">GT</td>
+                        <td style="text-align: center">A<sup>3</sup>T</td>
+                        <td style="text-align: center">CampNet</td>
+                        <td style="text-align: center">EditSpeech</td>
+                        <td style="text-align: center">FluentSpeech</td>
+                    </tr>
+                    <tr>
+                        <td><audio class="audio-div" controls=""><source src="./audio_samples/SpeechEditing/seen/gt/p234_119.wav" type="audio/wav" /></audio></td>
+                        <td><audio class="audio-div" controls=""><source src="./audio_samples/SpeechEditing/seen/gt/p240_134.wav" type="audio/wav" /></audio></td>
+                        <td><audio class="audio-div" controls=""><source src="./audio_samples/SpeechEditing/seen/gt/p260_356.wav" type="audio/wav" /></audio></td>
+                        <td><audio class="audio-div" controls=""><source src="./audio_samples/SpeechEditing/seen/gt/p234_119.wav" type="audio/wav" /></audio></td>
+                        <td><audio class="audio-div" controls=""><source src="./audio_samples/SpeechEditing/seen/gt/p234_119.wav" type="audio/wav" /></audio></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><strong>Sample 4</strong></p>
+            <div class="audio-tb">
+                <table class="table table-bordered table-light">
+                    <thead></thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row" style="text-align: center">original text</th>
+                        <td colspan="5">no , the equipment is extra .</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="text-align: center;">edited text</th>
+                        <td colspan="5">no , the equipment is not enough .</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="text-align: center">speaker id</th>
+                        <td colspan="5">p234</td>
+                    </tr>
+                    <tr class="table-dark" style="line-height: 40px">
+                        <td style="text-align: center">GT</td>
+                        <td style="text-align: center">A<sup>3</sup>T</td>
+                        <td style="text-align: center">CampNet</td>
+                        <td style="text-align: center">EditSpeech</td>
+                        <td style="text-align: center">FluentSpeech</td>
+                    </tr>
+                    <tr>
+                        <td><audio class="audio-div" controls=""><source src="./audio_samples/SpeechEditing/seen/gt/p234_119.wav" type="audio/wav" /></audio></td>
+                        <td><audio class="audio-div" controls=""><source src="./audio_samples/SpeechEditing/seen/gt/p240_134.wav" type="audio/wav" /></audio></td>
+                        <td><audio class="audio-div" controls=""><source src="./audio_samples/SpeechEditing/seen/gt/p260_356.wav" type="audio/wav" /></audio></td>
+                        <td><audio class="audio-div" controls=""><source src="./audio_samples/SpeechEditing/seen/gt/p234_119.wav" type="audio/wav" /></audio></td>
+                        <td><audio class="audio-div" controls=""><source src="./audio_samples/SpeechEditing/seen/gt/p234_119.wav" type="audio/wav" /></audio></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><strong>Sample 5</strong></p>
 
-
+            <div class="audio-tb">
+                <table class="table table-bordered table-light">
+                    <thead></thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row" style="text-align: center">original text</th>
+                        <td colspan="5">no , the equipment is extra .</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="text-align: center;">edited text</th>
+                        <td colspan="5">no , the equipment is not enough .</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="text-align: center">speaker id</th>
+                        <td colspan="5">p234</td>
+                    </tr>
+                    <tr class="table-dark" style="line-height: 40px">
+                        <td style="text-align: center">GT</td>
+                        <td style="text-align: center">A<sup>3</sup>T</td>
+                        <td style="text-align: center">CampNet</td>
+                        <td style="text-align: center">EditSpeech</td>
+                        <td style="text-align: center">FluentSpeech</td>
+                    </tr>
+                    <tr>
+                        <td><audio class="audio-div" controls=""><source src="./audio_samples/SpeechEditing/seen/gt/p234_119.wav" type="audio/wav" /></audio></td>
+                        <td><audio class="audio-div" controls=""><source src="./audio_samples/SpeechEditing/seen/gt/p240_134.wav" type="audio/wav" /></audio></td>
+                        <td><audio class="audio-div" controls=""><source src="./audio_samples/SpeechEditing/seen/gt/p260_356.wav" type="audio/wav" /></audio></td>
+                        <td><audio class="audio-div" controls=""><source src="./audio_samples/SpeechEditing/seen/gt/p234_119.wav" type="audio/wav" /></audio></td>
+                        <td><audio class="audio-div" controls=""><source src="./audio_samples/SpeechEditing/seen/gt/p234_119.wav" type="audio/wav" /></audio></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <p><kbd class="kbd-div">2.2: Replacement</kbd></p>
+        <p><kbd class="kbd-div">2.3: Deletion</kbd></p>
 
         <h1 class="head1"><a id="exp3">3: Speech Editing with unseen speaker</a></h1>
         <hr class="hr-div">
-        <h1 class="head1"><a id="exp4">4: SASE with seen speaker (automatically remove stutter)</a></h1>
+        <p><kbd class="kbd-div">3.1: Insertion</kbd></p>
+        <div>
+
+        </div>
+        <p><kbd class="kbd-div">3.2: Replacement</kbd></p>
+        <p><kbd class="kbd-div">3.3: Deletion</kbd></p>
+
+        <h1 class="head1"><a id="exp4">4: SASE task (automatically remove stutter)</a></h1>
         <hr class="hr-div">
-        <h1 class="head1"><a id="exp5">5: SASE with unseen speaker</a></h1>
-        <hr class="hr-div">
+        <p class="font-family-div">We provide the original audios, edited audios from our proposed system in the experiments based on our newly collected <strong>SASE</strong> dataset.</p>
+
 
         <div style="min-height: 300px"></div>
     </div>
