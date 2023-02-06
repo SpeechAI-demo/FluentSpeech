@@ -15,14 +15,14 @@
     <div class="bg-success text-dark bg-opacity-10 body-div">
         <h1 class="head1">FluentSpeech: Stutter-Oriented Automatic Speech Editing
             with Context-Aware Diffusion Models</h1>
-        <p class="p1-div">We demonstrate experimental results on two tasks (speech editing and <strong>stutter-oriented automatic speech editing</strong> also abbreviated as <strong>SASE</strong>) for demo respectively. For speech editing task, we provide 3 samples for each edit option, including insertion, replacement and deletion. For the insertion and replacement , we provide the original audio, the edited audio from baseline systems and our proposed system to compare the edit performance of different systems. In particular, we do not show the effect of delete operation, as difference between different system is not noticeable. For SASE task, we provide 8 samples including the original audio, the edited audio from the proposed system to show the high efficiency of our model in improving the fluency of stuttering speech.</p>
+        <p class="p1-div">We demonstrate experimental results on two tasks (<strong>speech editing</strong> and <strong>stutter removal</strong>). For the speech editing task, we provide examples of editing operations. For the insertion and replacement, we provide the original audio, the edited audio from baseline systems, and our proposed system to compare the edit performance of different systems. Here we do not show the effect of the delete operation, since the delete operation can be seen as a particular replacement. For the stutter removal task, we provide 8 samples including the original audio, and the edited audio from the proposed system to show the high efficiency of our model in improving the fluency of stuttering speech.</p>
         <p><mark style="color: red">Note: Audio samples include both seen and unseen speakers.</mark></p>
         <h1 class="head1">Content</h1>
         <div style="margin-left: 15px;margin-top: -10px;margin-bottom: 25px">
             <li class="li-div"><a href="#exp1"><font size="4">1: Baseline Systems</font></a>
             <li class="li-div"><a href="#exp2"><font size="4">2: Speech Editing with seen speaker (insertion and replacement)</font></a>
             <li class="li-div"><a href="#exp3"><font size="4">3: Speech Editing with unseen speaker</font></a>
-            <li class="li-div"><a href="#exp4"><font size="4">4: SASE task (automatically remove stutter)</font></a>
+            <li class="li-div"><a href="#exp4"><font size="4">4: Stutter removal</font></a>
         </div>
         <h1 class="head1"><a id="exp1">1: Baseline Systems</a></h1>
         <hr class="hr-div">
@@ -534,7 +534,7 @@
         </script>
 
         <div style="height: 60px"></div>
-        <h1 class="head1"><a id="exp4">4: SASE task (automatically remove stutter)</a></h1>
+        <h1 class="head1"><a id="exp4">4: Stutter removal</a></h1>
         <hr class="hr-div">
         <p class="font-family-div">We provide the original audios, edited audios from our proposed system in the experiments based on our newly collected <strong>SASE</strong> dataset.</p>
         <div class="sase-audio">
